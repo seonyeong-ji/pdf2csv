@@ -179,7 +179,8 @@ if __name__ == '__main__':
    st.title("TEXT PDF to CSV")
    st.subheader("TEXT PDF 파일의 좌표와 텍스트를 CSV로 출력합니다.")
    st.text("배포일 2024-08-05\n"
-           "연락처 미래기획팀 지선영 대리(syji@boinit.com)")
+           "연락처 미래기획팀 지선영 대리(syji@boinit.com)\n
+           python 사용이 익숙하신 분은 https://github.com/seonyeong-ji/pdf2csv 에서 코드를 직접 다운받아 커스텀하여 사용하실 수 있습니다.")
 
 
    pdf_file = st.file_uploader('PDF 파일 업로드', type=['PDF', 'pdf'])
