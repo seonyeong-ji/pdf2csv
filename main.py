@@ -236,4 +236,4 @@ if __name__ == '__main__':
           key='download-csv'
        )
 
-       st.markdown("다음 파일을 변환하려면 'Browse files' 아이콘을 눌러 pdf 파일을 재업로드 해주세요.")
+       st.markdown("다음 파일을 변환하려면 'Reset', 'Browse files' 버튼을 순서대로 눌러 pdf 파일을 재업로드 해주세요.")
