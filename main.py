@@ -97,7 +97,7 @@ def merge_bboxes_with_y_threshold(pre_grouped):
                 if sorted_group[i]['x0'] - sorted_group[i - 1]['x1'] > threshold:
                     final_grouped[(y0, page, id(current_group))].extend(current_group)
                     current_group = []
-                    current_group.append(sorted_group[i])
+                current_group.append(sorted_group[i])
 
             if current_group:
                 final_grouped[(y0, page, id(current_group))].extend(current_group)
