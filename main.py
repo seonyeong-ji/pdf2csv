@@ -196,11 +196,16 @@ if __name__ == '__main__':
    st.set_page_config(page_title="BoinIT TextPDF2CSV")
 
    st.title("TEXT PDF to CSV")
-   st.subheader("TEXT PDF 파일의 좌표와 텍스트를 CSV로 출력합니다.")
+   st.subheader("TEXT PDF 파일을 업로드하면 텍스트를 CSV 파일로 출력합니다.")
+
    st.text("배포일 2024-08-05\n"
            "연락처 미래기획팀 지선영 대리(syji@boinit.com)\n"
            "python 사용이 익숙하신 분은 저에게 연락주세요. 커스텀하실 수 있도록 원본 코드 제공 가능합니다.")
-
+   st.divider()
+	
+   if st.button("Reset"):
+       st.session_state.value = "Reset"
+       st.rerun()
 
    pdf_file = st.file_uploader('PDF 파일 업로드', type=['PDF', 'pdf'])
 
