@@ -104,7 +104,7 @@ def merge_bboxes_with_y_threshold(pre_grouped):
         else:
             final_grouped[(y0, page, id(sorted_group))].extend(sorted_group)
 
-        return final_grouped
+    return final_grouped
 
 
 @st.cache_data
